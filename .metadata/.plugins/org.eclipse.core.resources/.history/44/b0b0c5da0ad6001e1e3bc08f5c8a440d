@@ -1,0 +1,5 @@
+package com.cisco.rest.model;
+
+public class Product {
+
+}

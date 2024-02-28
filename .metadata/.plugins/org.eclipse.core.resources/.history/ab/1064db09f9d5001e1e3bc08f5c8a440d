@@ -1,0 +1,25 @@
+package com.cisco.simplejava;
+
+import java.util.Scanner;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int cashback[] = {10,20,30,40,50,60,70,80,90,100};
+		System.out.println("Enter any number :");
+		int num=sc.nextInt();
+		try {
+			int cash=cashback[num];
+			System.out.println("Congrats ..! ,you won cashback of" +cash );
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Better luck next time ...!!!");
+		}
+		finally {
+			sc.close();
+		}
+		
+
+	}
+
+}

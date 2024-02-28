@@ -1,0 +1,7 @@
+FROM openjdk:17
+
+RUN mkdir/SimpleJavaApp
+
+COPY bin/SimpleJavaApp
+
+WORKDIR /SimpleJavaApp

@@ -1,0 +1,9 @@
+FROM openjdk:8
+
+RUN mkdir/SimpleJavaApp
+
+COPY bin/SimpleJavaApp
+
+WORKDIR /SimpleJavaApp
+
+CMD java com.cisco.simplejava.MpSampApp
